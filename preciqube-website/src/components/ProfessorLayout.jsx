@@ -9,6 +9,7 @@ const ProfessorLayout = ({ children }) => {
         <Link to="/professor/publications">Publications</Link>
         <Link to="/professor/students">Students</Link>
         <Link to="/professor/teaching">Teaching</Link>
+        <Link to="/professor/projects">Projects</Link>
         <Link to="/">← Back to Preciqube</Link>
       </nav>
       <main className="p-6">{children}</main>
