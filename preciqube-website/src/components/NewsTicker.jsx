@@ -3,10 +3,7 @@ import React from "react";
 
 const NewsTicker = () => {
   const updates = [
-    "📢 Preciqube team to attend QTech 2025!",
-    "🚀 First prototype of our laser-stabilized cavity almost ready.",
-    "🔬 Hiring: Mechanical Engineer (Quantum Hardware)",
-    "🧠 Blog post coming soon: 'Why stability matters in quantum optics'",
+    "📢 Preciqube is hiring interns. Scroll down to career section.",
   ];
 
   return (
@@ -23,3 +20,4 @@ const NewsTicker = () => {
 };
 
 export default NewsTicker;
+
