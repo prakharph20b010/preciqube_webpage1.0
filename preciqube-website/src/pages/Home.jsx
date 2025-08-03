@@ -5,20 +5,22 @@ import NewsTicker from "../components/NewsTicker";
 import About from "../components/About";
 import Careers from "../components/Careers";
 import Team from "../components/Team";
-import BlogPreview from "../components/BlogPreview";
-
+//import BlogPreview from "../components/BlogPreview";
+import Contact from "../components/Contact";
+import Footer from "../components/Footer";
+//<BlogPreview /> {/* <section id="blog" ... /> inside Team.jsx */}
 const Home = () => {
   return (
-    //<div className="bg-gray-50 text-gray-800 dark:bg-[#0f0f1a] dark:text-white min-h-screen font-sans">
     <div className="bg-[#0f0f1a] text-white min-h-screen font-sans">
       <Header />
       <main className="space-y-12 px-6 md:px-20 py-10 bg-[#0f0f1a]">
         <Hero />
         <NewsTicker />
-        <About />
-        <Careers />
-        <Team />
-        <BlogPreview />
+        <About />       {/* <section id="about" ... /> inside About.jsx */}
+        <Careers />     {/* <section id="careers" ... /> inside Careers.jsx */}
+        <Team />        {/* <section id="team" ... /> inside Team.jsx */}
+        
+        <Contact />     {/* <section id="contact" ... /> inside Contact.jsx */}
       </main>
     </div>
   );
