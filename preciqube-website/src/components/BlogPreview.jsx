@@ -23,7 +23,7 @@ const blogs = [
 
 const BlogPreview = () => {
   return (
-    <section className="bg-[#0f0f1a] py-20 px-6 text-white">
+    <section  id="blog" className="bg-[#0f0f1a] py-20 px-6 text-white">
       <div className="max-w-6xl mx-auto text-center">
         <h2 className="text-4xl font-bold text-cyan-400 mb-12">From Our Blog</h2>
 
