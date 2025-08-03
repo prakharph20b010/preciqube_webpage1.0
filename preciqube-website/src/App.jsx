@@ -13,7 +13,7 @@ import Footer from "./components/Footer";
 
 function App() {
   return (
-    <Router>
+    <Router basename="/preciqube_webpage1.0">  
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/professor" element={<ProfessorHome />} />
