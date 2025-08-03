@@ -3,50 +3,57 @@ import HeroImage from "../assets/optics-lab.png";
 
 const Hero = () => {
   return (
-    <section className="relative w-full text-white pt-16 pb-0">
-      <div className="max-w-7xl mx-auto text-center px-6 z-10 relative">
-        <h1 className="text-4xl md:text-6xl font-bold text-sky-400 mb-4">
+    <section className="relative w-full h-[90vh] text-white">
+      {/* Full Image with overlay */}
+      <img
+        src={HeroImage}
+        alt="Optical system"
+        className="absolute inset-0 w-full h-full object-cover z-0"
+      />
+      <div className="absolute inset-0 bg-black bg-opacity-60 z-10" />
+
+      {/* Overlaid content */}
+      <div className="relative z-20 flex flex-col items-center justify-center h-full px-6 text-center">
+        <h1 className="text-5xl md:text-7xl font-bold text-sky-400 mb-6 drop-shadow-lg">
           PRECIQUBE
         </h1>
-        <p className="text-lg md:text-2xl mb-8 font-medium text-white">
-          Advancing quantum-ready optics.<br />
+        <p className="text-xl md:text-2xl text-white font-medium mb-10 max-w-3xl drop-shadow">
+          Advancing quantum-ready optics,
           Where precision meets stability.
         </p>
-      </div>
 
-      {/* Background Image with overlay */}
-      <div className="relative w-screen overflow-hidden">
-        <img
-          src={HeroImage}
-          alt="Optical system"
-          className="w-full h-auto object-cover"
-        />
-
-        {/* Buttons over image */}
-        <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 w-full px-4">
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 max-w-5xl mx-auto">
-            <FeatureCard label="Ultra Stable Cavity" icon="📷" />
-            <FeatureCard label="Low-Drift Platforms" icon="🔋" />
-            <FeatureCard label="Precision Alignment" icon="🎯" />
-            <FeatureCard label="Discover" icon="🔄" isCTA />
-          </div>
+        {/* Feature buttons */}
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 max-w-4xl w-full">
+          <FeatureCard label="Ultra Stable Cavity" />
+          <FeatureCard label="Low-Drift Platforms" />
+          <FeatureCard label="Precision Alignment" />
+          <FeatureCard label="Discover" isCTA />
         </div>
       </div>
     </section>
   );
 };
 
-const FeatureCard = ({ label, icon, isCTA = false }) => {
+const FeatureCard = ({ label, isCTA = false }) => {
   return (
     <div
-      className={`flex flex-col items-center justify-center p-4 rounded-lg shadow-md ${
-        isCTA
-          ? "bg-sky-400 text-black font-semibold hover:bg-sky-500 transition"
-          : "bg-gray-800/90 text-white"
-      }`}
+      className={`
+        relative group p-4 sm:p-6 bg-[#1a1a2e] text-white rounded-xl shadow-lg
+        transition-transform duration-500 transform hover:rotate-1 hover:scale-105
+        cursor-pointer overflow-hidden
+      `}
     >
-      <div className="text-3xl mb-2">{icon}</div>
-      <div className="text-sm text-center">{label}</div>
+      {/* Front */}
+      <div className="transition-opacity duration-300 group-hover:opacity-0">
+        <h3 className="text-lg sm:text-xl font-semibold text-cyan-400 text-center">
+          {label}
+        </h3>
+      </div>
+
+      {/* Hover back */}
+      <div className="absolute inset-0 flex items-center justify-center bg-[#111827] text-sm sm:text-base font-semibold text-gray-200 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+        Coming soon
+      </div>
     </div>
   );
 };
