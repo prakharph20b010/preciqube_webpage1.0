@@ -6,7 +6,7 @@
   "description": "Official website of PreciQube – Quantum Optics Hardware Startup incubated at IIT Madras.",
   "author": "PreciQube Team",
   "license": "MIT",
-  "homepage": "https://prakharph20b010.github.io/preciqube_webpage1.0",
+  "homepage": "https://www.preciqube.com",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
