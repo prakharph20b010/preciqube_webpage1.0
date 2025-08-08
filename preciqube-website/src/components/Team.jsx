@@ -48,6 +48,7 @@ const Team = () => {
                   <p className="mt-4 text-sm">
                     <Link
                       to={member.link}
+                      onClick={() => window.scrollTo(0, 0)}
                       className="text-sky-400 hover:underline"
                     >
                       Visit profile →
