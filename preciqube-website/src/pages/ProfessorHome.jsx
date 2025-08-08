@@ -26,7 +26,7 @@ const ProfessorHome = () => {
               </p>
               <h2 className="text-2xl font-semibold text-red-500 mb-3 text-left">Bio-sketch</h2>
               <p className="text-md md:text-lg text-gray-700 dark:text-gray-400 leading-relaxed text-justify">
-                Dr. A.R. Ganesan received his Ph.D. from the Indian Institute of Technology Madras, specializing in adaptive optics and optical instrumentation. Over the last three decades, he has contributed significantly to India's precision optics capabilities, especially in the areas of wavefront sensing, optical alignment systems, and quantum photonic platforms. He has held visiting scientist positions at CREOL (USA) and the University of New Mexico, collaborating on atomic sensors and laser stability research. As a faculty member at IIT Madras, he leads multiple national projects funded by DRDO, ISRO, and DST. His work spans both fundamental research and industrial consulting, advancing the frontier of quantum-ready instrumentation.
+                Dr. A.R. Ganesan received his Ph.D. from the Indian Institute of Technology Madras, specializing in adaptive optics and optical instrumentation. Over the last three decades, he has contributed significantly to India's precision optics capabilities, especially in the areas of wavefront sensing, optical alignment systems, and photonic platforms. He has held visiting scientist positions at CREOL (USA) and the University of New Mexico, collaborating on atomic sensors and laser stability research. As a faculty member at IIT Madras, he has led multiple national projects funded by DRDO, ISRO, and DST. His work spans both fundamental research and industrial consulting.
               </p>
             </div>
           </div>
@@ -39,7 +39,6 @@ const ProfessorHome = () => {
               <ul className="list-disc pl-6 text-lg text-gray-800 dark:text-gray-300 space-y-2">
                 <li>Ph.D. in Physics (Applied Optics, Holography, Laser Instrumentation), IIT Madras, 1989</li>
                 <li>M.Sc. in Physics (Electronics specialization), University of Madras, 1984 – First Class</li>
-                <li>B.Sc. in Physics, University of Madras, 1981 – First Class</li>
               </ul>
             </section>
 
@@ -51,14 +50,10 @@ const ProfessorHome = () => {
                 <li>Professor, Department of Physics, IIT Madras (Mar. 2018 – Present)</li>
                 <li>Associate Professor, Department of Physics, IIT Madras (Jun. 2006 – Mar. 2018)</li>
                 <li>Associate Professor, Department of Physics, NIT Tiruchirappalli (Jan. 2005 – Jun. 2006)</li>
-                <li>Assistant Professor, Department of Physics, NIT Tiruchirappalli (Nov. 1998 – Dec. 2004)</li>
-                <li>Assistant Professor, Dept. of E&I Engineering, Shanmugha College of Engineering (Jul. 1997 – Oct. 1998)</li>
-                <li>Senior Research Associate, Dept. of Physics, IIT Madras (Apr. 1994 – Jun. 1997)</li>
                 <li>Scientist (on leave from IITM), IRDE, DRDO, Dehradun (Oct. 1994 – Jul. 1995)</li>
                 <li>Alexander von Humboldt Fellow, University of Oldenburg, Germany (May 1992 – Mar. 1994)</li>
                 <li>Research Assistant Professor, Alabama A&M University, USA (May 1991 – Apr. 1992)</li>
                 <li>Postdoctoral Fellow, University of Malaya, Malaysia (Oct. 1989 – Apr. 1991)</li>
-                <li>Research Fellow & Project Associate, Dept. of Physics, IIT Madras (Sep. 1984 – Oct. 1989)</li>
               </ul>
             </section>
 
@@ -72,7 +67,6 @@ const ProfessorHome = () => {
                 <li>Norwegian Institute of Technology, Trondheim, Norway (Sep. 1993)</li>
                 <li>University of Oldenburg, Germany (Jun. – Aug. 1999)</li>
                 <li>National University of Ireland, Galway (May – Jun. 2012)</li>
-                <li>Presented invited lectures at conferences in USA, China, and other countries</li>
               </ul>
             </section>
 
