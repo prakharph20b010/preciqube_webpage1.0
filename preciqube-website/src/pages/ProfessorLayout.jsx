@@ -13,7 +13,6 @@ const ProfessorLayout = ({ children }) => {
             <Link to="/professor-publications" className="text-gray-300 hover:text-white">Publications</Link>
             <Link to="/professor-students" className="text-gray-300 hover:text-white">Students</Link>
             <Link to="/professor-teaching" className="text-gray-300 hover:text-white">Teaching</Link>
-            <Link to="/professor-projects" className="text-gray-300 hover:text-white">Projects</Link>
           </nav>
         </div>
       </header>
